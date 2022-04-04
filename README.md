@@ -10,9 +10,13 @@
 - npm install
 
 - Navigate to the root directory and enter `node server.js` then open `http://localhost:3005/express_backend` in your web browser.
-- While in the root directory enter `npm run start` then the React front end should populate in your web browser.
+- While in the root directory enter `npm run start` then the React front end should populate in your web browser. WARNING: If you get an error, then you likely need to create a `.env` file and include `SKIP_PREFLIGHT_CHECK=true`. Save and then re-run `npm run start` and the web application should launch.
 
 ## Test
 Once you have completed the instalation instructions above, select connect and a modal should populate that allows you to `Create Stacks Account`.
+
+## Images
+![Example IMG](https://github.com/gemsjohn/project-2-demo/blob/main/public/example.png)
+![HIRO](https://github.com/gemsjohn/project-2-demo/blob/main/public/hiro.png)
 
 
