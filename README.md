@@ -5,7 +5,7 @@
 - This would require the use of React, which would satisfy the following requirement: "Use at least one new library, package, or technology that we haven't discussed."
 - This repo is set up to accept handlebars.js and express.js. In fact the React front end will populate on one port and the backend will populate on another port. 
 
-## Instalation 
+## Installation 
 - git clone git@github.com:gemsjohn/project-2-demo.git
 - npm install
 
