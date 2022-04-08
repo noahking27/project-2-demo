@@ -17,6 +17,7 @@ export function authenticate() {
     },
     userSession: userSession,
   });
+  // console.log(DApp_homepage);
 }
 
 export function getUserData() {
@@ -25,4 +26,8 @@ export function getUserData() {
 
 export function getPerson() {
   return new Person(getUserData().profile);
+}
+
+export function disconnect() {
+  userSession.signUserOut(window.location.origin);
 }

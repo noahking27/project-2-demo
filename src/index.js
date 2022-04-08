@@ -12,13 +12,14 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
-var source = document.getElementById("entry-template");
-var template = Handlebars.compile(`
-  <div class="entry">
-    <h1>{{title}}</h1>
-    <div class="body">
-      {{body}}
-    </div>
-  </div>
-`);
-source.innerHTML = template({ title: "My New Post", body: "This is my first post!" });
+
+// var source = document.getElementById("entry-template");
+// var template = Handlebars.compile(`
+//   <div class="entry">
+//     <h1>{{title}}</h1>
+//     <div class="body">
+//       {{body}}
+//     </div>
+//   </div>
+// `);
+// source.innerHTML = template({ title: "My New Post", body: "This is my first post!" });
