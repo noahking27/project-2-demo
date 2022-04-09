@@ -73,9 +73,10 @@ export const Dashboard = () => {
                 <h6 class="card-subtitle mb-2 text-muted">pettype</h6>
                 <p class="card-text">aboutpet</p>
             </div>
-            <button class="btn btn-lg btn-success" type="button" data-toggle="modal" data-target="#exampleModal">New job</button>
+            <button class="btn btn-lg btn-success" type="button" data-toggle="modal" data-target="#exampleModal" onclick="myFunction()">New job</button>
         </div>`
     );
+    
     const jobsCard = Handlebars.registerPartial(
         'jobs-card',
             `<div class="card mb-2">

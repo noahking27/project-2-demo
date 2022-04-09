@@ -5,7 +5,7 @@ const htmlDashboardRoutes = require("./html-dashboard-routes.js");
 const htmlJobsSearchRoutes = require("./html-jobs-search-routes.js");
 // const apiRoutes = require("./api");
 
-router.use("/", htmlHomeRoutes);
+// router.use("/", htmlHomeRoutes);
 // router.use("/api", apiRoutes);
 router.use("/dashboard", htmlDashboardRoutes);
 router.use("/jobs", htmlJobsSearchRoutes);

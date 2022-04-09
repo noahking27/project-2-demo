@@ -38,8 +38,10 @@ export const Signout = () => {
           <button type="button" className="btn success" onClick={() => disconnect()}>Logout</button>
         </div>
       </div>
-      <Main />
-      <Dashboard />
+      <Main /> 
+      {/* Hardcode your two Hiro Web App Account addresses to toggle between views */}
+      {stxAddress === 'SP29AZWNBFXEHJGBQ2BMQ71W8R79DCA3NZQ7QJ367' ? <Dashboard /> : console.log("Not Account 1")}
+      {stxAddress === 'SP206YJ9G14C3FD0JZE3C92KZ3V35JVNVW93Q0VKQ' ? <WalkerDash /> : console.log("Not Account 2")}
     </div>
     
   );
