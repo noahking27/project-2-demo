@@ -5,6 +5,8 @@ import { getUserData } from '../auth';
 import { Dashboard } from './handlebars/dashboard';
 import { Main } from './handlebars/main';
 import { Homepage } from './handlebars/homepage';
+import { Jobsearch } from './handlebars/jobsearch';
+import { WalkerDash } from './handlebars/walker-dashboard';
 
 export const Signin = () => {
   console.log("Sign in");
