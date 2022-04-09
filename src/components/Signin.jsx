@@ -2,8 +2,8 @@ import React from 'react';
 import { authenticate, disconnect } from '../auth';
 import { Text } from '@blockstack/ui';
 import { getUserData } from '../auth';
-import { Dashboard } from './handlebars/dashboard_0';
-import { Main } from './handlebars/main_0';
+import { Dashboard } from './handlebars/dashboard';
+import { Main } from './handlebars/main';
 import { Homepage } from './handlebars/homepage';
 
 export const Signin = () => {
