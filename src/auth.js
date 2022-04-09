@@ -1,6 +1,7 @@
 import { AppConfig, UserSession, showConnect } from '@stacks/connect';
 import { Person } from '@stacks/profile';
 
+
 const appConfig = new AppConfig(['store_write', 'publish_data']);
 
 export const userSession = new UserSession({ appConfig });
@@ -8,8 +9,8 @@ export const userSession = new UserSession({ appConfig });
 export function authenticate() {
   showConnect({
     appDetails: {
-      name: 'Project_2',
-      icon: window.location.origin + '../public/dog.svg',
+      name: 'Test',
+      icon: window.location.origin + './assets/puppy.png',
     },
     redirectTo: '/',
     onFinish: () => {
@@ -17,7 +18,6 @@ export function authenticate() {
     },
     userSession: userSession,
   });
-  // console.log(DApp_homepage);
 }
 
 export function getUserData() {
@@ -30,4 +30,5 @@ export function getPerson() {
 
 export function disconnect() {
   userSession.signUserOut(window.location.origin);
+  
 }

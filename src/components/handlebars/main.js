@@ -1,7 +1,7 @@
 import Handlebars from 'handlebars';
 export const Main = () => {
-    var source = document.getElementById("entry-template");
-    var template = Handlebars.compile(`
+    const source = document.getElementById("entry-template");
+    const template = Handlebars.compile(`
     <!DOCTYPE html>
     <html lang="en">
 
@@ -29,7 +29,7 @@ export const Main = () => {
 
     </html>
     `);
-    source.innerHTML = template({ body: "Body?" }); // Not sure what is supposed to go into body
+    source.innerHTML = template({ body: "Test" }); // Not sure what is supposed to go into body
   
     return (
       template

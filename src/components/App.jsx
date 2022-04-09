@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Signin, Signout } from './Signin';
 import { userSession } from '../auth';
-import { Main } from './main';
-import { Homepage } from './homepage';
+// import { Main } from './main';
+
 
 export default class App extends Component {
   state = {
@@ -44,13 +44,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div className="nav_bar">
           {!userSession.isUserSignedIn() ? <Signin /> : <Signout/>}
-        </div>
-        <Main />
-        <Homepage />
       </div>
-      
     );
   }
 }

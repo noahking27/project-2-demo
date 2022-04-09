@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import Handlebars from 'handlebars';
 export const Homepage = () => {
     // const source = document.getElementById("entry-template");

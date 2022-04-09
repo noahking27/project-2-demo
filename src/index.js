@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './components/App';
-import Handlebars from 'handlebars';
+// import Handlebars from 'handlebars';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -11,7 +11,6 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('app')
 );
-
 
 // var source = document.getElementById("entry-template");
 // var template = Handlebars.compile(`
