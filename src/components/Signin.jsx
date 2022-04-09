@@ -52,11 +52,12 @@ export const Signout = () => {
         </div>
       </div>
       <Main /> 
-      {/* Hardcode your two Hiro Web App Account addresses to toggle between views */}
+      {/* [NEED]: We need to pass a variable through the following terenary operators to identify wether the user exists in either the Owner or Walker models. */}
+      {/* The following terenary operators will execute in sequence. */}
       {/* If you find the key in the Owners Table then render the Owner Dashboard.  */}
-      {stxAddress === 'SP29AZWNBFXEHJGBQ2BMQ71W8R79DCA3NZQ7QJ367' ? <Dashboard /> : console.log("Not Account 1")}
+      {stxAddress === 'SP29AZWNBFXEHJGBQ2BMQ71W8R79DCA3NZQ7QJ367' ? <Dashboard /> : console.log("This account is not registered as an Owner.")}
       {/* If you find the key in the Walker Table then render the Walker Dashboard.  */}
-      {stxAddress === 'SP206YJ9G14C3FD0JZE3C92KZ3V35JVNVW93Q0VKQ' ? <Jobsearch /> : console.log("Not Account 2")}
+      {stxAddress === 'SP206YJ9G14C3FD0JZE3C92KZ3V35JVNVW93Q0VKQ' ? <WalkerDash /> : console.log("This account is not registered as a Walker.")}
     </div>
     
   );

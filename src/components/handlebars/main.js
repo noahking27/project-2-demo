@@ -1,7 +1,10 @@
+// Primary dependencies
 import React from "react";
-// import ReactDOM from "react-dom";
 import Handlebars from "handlebars";
 
+import { Homepage } from "./homepage";
+
+// Set up the Main HTML template
 const template = Handlebars.compile(`
     <!DOCTYPE html>
     <html lang="en">
@@ -31,6 +34,7 @@ const template = Handlebars.compile(`
     </html>
 `);
 
+// Export the Main HTML using the template and the partials
 export const Main = () => {
     const data = {
         body: ""

@@ -1,7 +1,7 @@
+// Primary dependencies
 import React from 'react';
-// import Handlebars from 'handlebars';
+
 export const Homepage = () => {
-    // const source = document.getElementById("entry-template");
     const data = `
         <div id="main-container" class="container1">
             <div class="jumbotron text-center header-wrap" align="center">

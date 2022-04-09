@@ -6,7 +6,7 @@ import Handlebars from 'handlebars';
 import { Petscard } from './partials/pets-card';
 import { Jobscard } from './partials/jobs-card';
 
-// Set up the Dashboard template
+// Set up the Owner Dashboard template
 const template = Handlebars.compile(`
     <div class="dashboard-container">
         <h1 id="your-dashboard" class="text-center">Your Dashboard</h1>
@@ -71,7 +71,7 @@ const template = Handlebars.compile(`
     </div>
 `);
 
-// Export the Dashboard using the template and the partials
+// Export the Owner Dashboard using the template and the partials
 export const Dashboard = () => { 
     return (
         <div

@@ -1,5 +1,8 @@
+// Primary dependencies
 import React from "react";
 import Handlebars from 'handlebars';
+
+// Set up the Job Card template
 const template = Handlebars.registerPartial(
     'jobs-card',
         `<div class="card mb-2">
@@ -12,6 +15,8 @@ const template = Handlebars.registerPartial(
             </div>
         </div>`
 );
+
+// Export the Job Cards using the template
 export const Jobscard = () => {
     return (
         <div

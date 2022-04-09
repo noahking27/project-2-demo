@@ -1,5 +1,8 @@
+// Primary dependencies
 import React from "react";
 import Handlebars from 'handlebars';
+
+// Set up the Nav Block template
 const template = Handlebars.registerPartial(
     'nav-block',
     `<div class="dropdown">
@@ -10,6 +13,8 @@ const template = Handlebars.registerPartial(
         </div>
     </div>`
 );
+
+// Export the Nav Block using the template
 export const Navblock = () => {
     return (
         <div
