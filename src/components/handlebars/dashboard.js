@@ -1,5 +1,6 @@
 import React from 'react';
 import Handlebars from 'handlebars';
+import { Petscard } from './partials/pets-card';
 const template = Handlebars.compile(`
     <div class="dashboard-container">
         <h1 id="your-dashboard" class="text-center">Your Dashboard</h1>
@@ -65,17 +66,17 @@ const template = Handlebars.compile(`
 `);
 
 export const Dashboard = () => {
-    const petsCard = Handlebars.registerPartial(
-        'pets-card',
-        `<div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">petname</h5>
-                <h6 class="card-subtitle mb-2 text-muted">pettype</h6>
-                <p class="card-text">aboutpet</p>
-            </div>
-            <button class="btn btn-lg btn-success" type="button" data-toggle="modal" data-target="#exampleModal" onclick="myFunction()">New job</button>
-        </div>`
-    );
+    // const petsCard = Handlebars.registerPartial(
+    //     'pets-card',
+    //     `<div class="card" style="width: 18rem;">
+    //         <div class="card-body">
+    //             <h5 class="card-title">petname</h5>
+    //             <h6 class="card-subtitle mb-2 text-muted">pettype</h6>
+    //             <p class="card-text">aboutpet</p>
+    //         </div>
+    //         <button class="btn btn-lg btn-success" type="button" data-toggle="modal" data-target="#exampleModal" onclick="myFunction()">New job</button>
+    //     </div>`
+    // );
     
     const jobsCard = Handlebars.registerPartial(
         'jobs-card',
@@ -92,7 +93,7 @@ export const Dashboard = () => {
   
     return (
         <div
-        dangerouslySetInnerHTML={{__html: template(petsCard, jobsCard)}}
+        dangerouslySetInnerHTML={{__html: template(Petscard, jobsCard)}}
       />
     );
 };
